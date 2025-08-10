@@ -1,162 +1,64 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Duke X22 - Gamer & Streamer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duke X22 - Gamer</title>
     <style>
         body {
-            margin: 0;
-            background: linear-gradient(135deg, #0f0f17, #1a1a2e);
-            color: #eee;
-            font-family: 'Orbitron', sans-serif;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        h1 {
-            font-size: 3.5rem;
-            color: #00ffea;
-            text-shadow: 0 0 5px #00ffea, 0 0 10px #00ffea, 0 0 20px #00ffea, 0 0 40px #00ffe1;
-            margin-bottom: 10px;
-        }
-        p.subtitle {
-            font-size: 1.4rem;
-            color: #a0f0f5;
-            margin-bottom: 40px;
-            font-weight: 600;
-        }
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-        }
-        a.btn {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            background-color: #121822;
-            border: 2px solid #00ffea;
-            border-radius: 12px;
-            color: #00ffea;
-            font-weight: bold;
-            font-size: 1.2rem;
-            padding: 14px 28px;
-            text-decoration: none;
-            transition: 0.3s;
-            min-width: 200px;
-            justify-content: center;
-            box-shadow: 0 0 10px #00ffea;
-        }
-        a.btn:hover {
-            background-color: #00ffea;
-            color: #121822;
-            box-shadow: 0 0 20px #00ffc4;
-        }
-        svg {
-            width: 28px;
-            height: 28px;
-            fill: currentColor;
-        }
-        section {
-            margin-top: 60px;
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: left;
-        }
-        section h2 {
-            color: #00ffea;
-            text-shadow: 0 0 10px #00ffea;
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-        section p, li {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #ddd;
-        }
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-        ul li::before {
-            content: "🎮 ";
-        }
-        iframe {
-            max-width: 100%;
-            border: none;
-            border-radius: 12px;
-            box-shadow: 0 0 20px #00ffea;
-        }
-        footer {
-            margin-top: 60px;
-            font-size: 0.9rem;
-            color: #555;
+            background-color: #0d0d0d;
+            color: #fff;
             font-family: Arial, sans-serif;
             text-align: center;
         }
-        @media (max-width: 600px) {
-            h1 { font-size: 2.5rem; }
-            .social-links { flex-direction: column; gap: 20px; }
-            a.btn { min-width: auto; width: 100%; }
-            section { text-align: center; }
+        header {
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-bottom: 3px solid #ff0000;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff0000;
+        }
+        .links a {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 20px;
+            background-color: #ff0000;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .links a:hover {
+            background-color: #cc0000;
+        }
+        .video {
+            margin-top: 30px;
+        }
+        iframe {
+            width: 80%;
+            height: 400px;
+            border: none;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>🎮 Duke X22 🎮</h1>
+        <p>Gamer • Lives todos os dias • Conteúdo de GTA, Minecraft, Roblox e mais!</p>
+    </header>
 
-    <h1>Duke X22</h1>
-    <p class="subtitle">Gamer e Streamer - Lives diárias e conteúdo de jogos</p>
-
-    <div class="social-links">
-        <a href="https://www.youtube.com/@Duke.x22" target="_blank" class="btn" aria-label="YouTube">
-            📺 YouTube
-        </a>
-        <a href="https://www.instagram.com/duke.x22" target="_blank" class="btn" aria-label="Instagram">
-            📷 Instagram
-        </a>
-        <a href="https://www.tiktok.com/@duke.x22" target="_blank" class="btn" aria-label="TikTok">
-            🎵 TikTok
-        </a>
-        <a href="https://www.vakinha.com.br/5669400" target="_blank" class="btn" aria-label="Vakinha">
-            💖 Apoie na Vakinha
-        </a>
-    </div>
-
-    <!-- Seção Sobre Mim -->
-    <section>
-        <h2>Sobre Mim</h2>
-        <p>Eu sou o <strong>Duke X22</strong>, gamer faço lives cheias de energia!  
-        Aqui você encontra muito GTA, Minecraft, Roblox e muito mais. Faço lives todos os dias para me conectar com a galera e trazer diversão, risadas e jogadas insanas!</p>
-        <ul>
-            <li>Jogos favoritos: GTA, Minecraft, Roblox</li>
-            <li>Lives todos os dias</li>
-            <li>Conteúdo divertido e interativo</li>
-        </ul>
+    <section class="links">
+        <a href="https://www.youtube.com/@Duke.x22" target="_blank">YouTube</a>
+        <a href="https://www.instagram.com/duke.x22" target="_blank">Instagram</a>
+        <a href="https://www.tiktok.com/@duke.x22" target="_blank">TikTok</a>
+        <a href="https://www.vakinha.com.br/5669400" target="_blank">Ajude na Vaquinha</a>
     </section>
 
-    <!-- Seção Agenda -->
-    <section>
-        <h2>Agenda de Lives</h2>
-        <p>🎯 Segunda,Sexta e Sabado: 00h às 3h</p>
-        <p>🔥 Domingo: 18h às 23h</p>
-        <p>Sempre com energia máxima e interação no chat!</p>
+    <section class="video">
+        <h2>Último Vídeo</h2>
+        <iframe src="https://www.youtube.com/embed/3c-CsI3ViUs" allowfullscreen></iframe>
     </section>
-
-    <!-- Seção Vídeo -->
-    <section>
-        <h2>Vídeo de Apresentação</h2>
-        <iframe width="560" height="315" src="<iframe width="560" height="315" src="https://www.youtube.com/embed/3c-CsI3ViUs?si=tHeps8BOknnq9mj3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" allowfullscreen></iframe>
-        <p style="text-align:center;">Assista ao vídeo e conheça mais sobre meu trabalho!</p>
-    </section>
-
-    <footer>
-        &copy; 2025 Duke X22 - Todos os direitos reservados
-    </footer>
-
 </body>
 </html>
-
-
