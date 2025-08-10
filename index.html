@@ -9,7 +9,7 @@
 
   body {
     margin: 0;
-    background: linear-gradient(135deg, #0f0f17, #1a1a2e);
+    background-color: #121212; /* fundo escuro mas simples */
     color: #eee;
     font-family: 'Orbitron', sans-serif;
     text-align: center;
@@ -21,10 +21,107 @@
     color: #00ffea;
     text-shadow:
       0 0 5px #00ffea,
-      0 0 10px #00ffea,
-      0 0 20px #00ffea,
-      0 0 40px #00ffe1;
+      0 0 10px #00ffea;
     margin-bottom: 10px;
   }
 
-  p.s
+  p.subtitle {
+    font-size: 1.3rem;
+    color: #a0f0f5;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  a.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #121822;
+    border: 2px solid #00ffea;
+    border-radius: 12px;
+    color: #00ffea;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px 24px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #00ffea;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 1.5s ease-in-out;
+    min-width: 180px;
+    justify-content: center;
+    animation: neonPulse 3s ease-in-out infinite;
+  }
+
+  a.btn:hover {
+    background-color: #00ffea;
+    color: #121822;
+    box-shadow: 0 0 25px #00ffc4, 0 0 50px #00ffc4;
+    animation: none;
+  }
+
+  @keyframes neonPulse {
+    0%, 100% {
+      box-shadow:
+        0 0 5px #00ffea,
+        0 0 10px #00ffea;
+    }
+    50% {
+      box-shadow:
+        0 0 15px #00ffea,
+        0 0 30px #00ffea;
+    }
+  }
+
+  section {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: left;
+  }
+
+  section h2 {
+    color: #00ffea;
+    text-shadow: 0 0 10px #00ffea;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  section p, ul, li {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  ul li::before {
+    content: "🎮 ";
+    margin-right: 6px;
+  }
+
+  iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00ffea;
+  }
+
+  footer {
+    text-align: center;
+    color: #555;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+  }
+
+  .highlights {
+    display: grid;
+    grid-tem
